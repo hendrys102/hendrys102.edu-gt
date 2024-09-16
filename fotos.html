@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fotos - CERBY</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #004d99;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+        header::before {
+            content: '';
+            display: block;
+            height: 85px;
+            background-image: url('tipico.jpg');
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            z-index: 1;
+            position: relative;
+        }
+        nav {
+            background-color: #a251ff98;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        section {
+            margin: 0;
+            padding: 40px;
+            background-color: #fff;
+        }
+        .content {
+            z-index: 1;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .gallery img {
+            width: calc(50% - 10px); /* Dos columnas con espacio entre ellas */
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #004d99;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+        }
+        footer::after {
+            content: '';
+            display: block;
+            height: 85px;
+            background-image: url('tipico.jpg');
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Centro Educativo Runawal Balam`ya - CERBY</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="mision.html">Misión</a>
+        <a href="historia.html">Historia</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="fotos.html">Fotos</a>
+    </nav>
+
+    <section>
+        <div class="content">
+            <h2>Nuestras Fotos</h2>
+            <div class="gallery">
+                <img src="img.jpg" alt="Foto 1">
+                <img src="img2.jpg" alt="Foto 2">
+                <img src="img3.jpg" alt="Foto 3">
+                <img src="img4.jpg" alt="Foto 4">
+                <img src="img5.jpg" alt="Foto 5">
+                <img src="img6.jpg" alt="Foto 6">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Centro Educativo Runawal Balam`ya. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
